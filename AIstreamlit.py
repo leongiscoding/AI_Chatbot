@@ -3,7 +3,8 @@ import os
 import google.generativeai as genai
 
 # Configure the Gemini API key
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+genai.configure(api_key=st.secrets["google"]["api_key"])
+
 
 # Create the model with the generation configuration
 generation_config = {
