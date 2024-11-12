@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Configure the Gemini API key with error handling
-api_key = os.getenv("GOOGLE_API_KEY")
+#api_key = os.getenv("GOOGLE_API_KEY")
 api_key = st.secrets["google"]["api_key"]
 if not api_key:
     st.error("Google API key is not set. Please provide a valid API key.")
