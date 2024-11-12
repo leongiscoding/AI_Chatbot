@@ -72,7 +72,7 @@ def get_game_content(category, game_name):
             return [None]
 
 def main():
-    st.set_page_config(page_title="Guild Game AI Bot", page_icon="🎮")
+    st.set_page_config(page_title="Gamer Compass", page_icon="🎮")
     st.title("Guild Game AI Bot")
     st.write("Get information about your favorite games!")
 
