@@ -1,0 +1,131 @@
+2024-11-12 15:27:35,266 - __main__ - ERROR - Error processing snippet: 429 Resource has been exhausted (e.g. check quota).
+2024-11-12 15:30:31,246 - __main__ - ERROR - Error processing snippet: 429 Resource has been exhausted (e.g. check quota).
+2024-11-12 15:30:31,547 - __main__ - ERROR - Error processing snippet: 429 Resource has been exhausted (e.g. check quota).
+2024-11-12 15:30:33,704 - __main__ - ERROR - Error processing snippet: 429 Resource has been exhausted (e.g. check quota).
+2024-11-13 00:19:20,635 - __main__ - ERROR - Error generating content: 'GenerateContentResponse' object has no attribute 'usage'
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\AI_Chatbot\generated.py", line 166, in get_game_content_async
+    response_usage = response.usage.tokens
+AttributeError: 'GenerateContentResponse' object has no attribute 'usage'
+2024-11-13 00:22:59,835 - __main__ - ERROR - Error generating content: Unknown field for UsageMetadata: tokens
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\AI_Chatbot\generated.py", line 166, in get_game_content_async
+    response_usage = response.usage_metadata.tokens
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\proto\message.py", line 877, in __getattr__
+    raise AttributeError(
+AttributeError: Unknown field for UsageMetadata: tokens
+2024-11-13 00:40:39,186 - __main__ - ERROR - Error scraping data: 
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\connector.py", line 563, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\connector.py", line 1032, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\connector.py", line 1317, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\connector.py", line 971, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\AI_Chatbot\generated.py", line 121, in scrape_game_info_async
+    async with self.session.get(search_url, headers=headers, timeout=10) as response:
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\client.py", line 1359, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\client.py", line 579, in _request
+    with timer:
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+asyncio.exceptions.TimeoutError
+2024-11-13 00:40:59,189 - __main__ - ERROR - Error scraping data: 
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\connector.py", line 563, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\connector.py", line 1032, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\connector.py", line 1317, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\connector.py", line 971, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\AI_Chatbot\generated.py", line 121, in scrape_game_info_async
+    async with self.session.get(search_url, headers=headers, timeout=10) as response:
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\client.py", line 1359, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\client.py", line 579, in _request
+    with timer:
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+asyncio.exceptions.TimeoutError
+2024-11-13 00:40:59,190 - __main__ - ERROR - Error scraping data: 
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\connector.py", line 563, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\connector.py", line 1032, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\connector.py", line 1317, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\connector.py", line 971, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\AI_Chatbot\generated.py", line 121, in scrape_game_info_async
+    async with self.session.get(search_url, headers=headers, timeout=10) as response:
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\client.py", line 1359, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\client.py", line 579, in _request
+    with timer:
+  File "C:\Users\user\anaconda3\envs\ai_apps\lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+asyncio.exceptions.TimeoutError
+2024-11-13 07:40:31,469 - __main__ - WARNING - HTTP 429 when scraping https://www.google.com/search?q=No more room in hell 2+guideline
+2024-11-13 07:40:48,519 - __main__ - WARNING - HTTP 429 when scraping https://www.google.com/search?q=minecraft+guideline
+2024-11-13 07:40:50,926 - __main__ - WARNING - HTTP 429 when scraping https://www.google.com/search?q=minecraft+guideline
+2024-11-13 07:41:35,125 - __main__ - WARNING - HTTP 429 when scraping https://www.google.com/search?q=Minecraft+guideline
+2024-11-13 07:41:38,730 - __main__ - WARNING - HTTP 429 when scraping https://www.google.com/search?q=Minecraft+guideline
+2024-11-13 07:41:38,802 - __main__ - WARNING - HTTP 429 when scraping https://www.google.com/search?q=Minecraft+guideline
+2024-11-13 07:41:39,260 - __main__ - WARNING - HTTP 429 when scraping https://www.google.com/search?q=Unable to retrieve information due to server response.+detailed info
+2024-11-13 07:42:28,068 - __main__ - WARNING - HTTP 429 when scraping https://www.google.com/search?q=Minecraft+guideline
+2024-11-13 07:42:33,846 - __main__ - WARNING - HTTP 429 when scraping https://www.google.com/search?q=Minecraft+guideline
+2024-11-13 07:57:35,808 - __main__ - WARNING - HTTP 429 when scraping https://www.google.com/search?q=No More Room In Hell 2 Succeeds In The Zombie Genre's Most Important Way+detailed info
+2024-11-13 07:57:38,102 - __main__ - ERROR - Error generating content: 'max-output-token'
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\AI_Chatbot\streamkit.py", line 238, in get_game_content_async
+    self.token_usage += self.generation_config['max-output-token']
+KeyError: 'max-output-token'
+2024-11-13 07:58:07,949 - __main__ - WARNING - HTTP 429 when scraping https://www.google.com/search?q=One Of The Best Lego Minecraft Sets Drops To Best Price Yet At Amazon+detailed info
+2024-11-13 07:58:10,335 - __main__ - ERROR - Error generating content: 'max-output-token'
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\AI_Chatbot\streamkit.py", line 238, in get_game_content_async
+    self.token_usage += self.generation_config['max-output-token']
+KeyError: 'max-output-token'
+2024-11-13 07:59:13,809 - __main__ - WARNING - HTTP 429 when scraping https://www.google.com/search?q=One Of The Best Lego Minecraft Sets Drops To Best Price Yet At Amazon+detailed info
+2024-11-13 07:59:16,383 - __main__ - ERROR - Error generating content: 'max_output_token'
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\AI_Chatbot\streamkit.py", line 238, in get_game_content_async
+    self.token_usage += self.generation_config['max_output_token']
+KeyError: 'max_output_token'
+2024-11-13 09:25:25,829 - __main__ - ERROR - Error generating content: 'max_output_token'
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\AI_Chatbot\streamkit.py", line 238, in get_game_content_async
+    self.token_usage += self.generation_config['max_output_token']
+KeyError: 'max_output_token'
+2024-11-13 09:25:31,868 - __main__ - ERROR - Error generating content: 'max_output_token'
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\AI_Chatbot\streamkit.py", line 238, in get_game_content_async
+    self.token_usage += self.generation_config['max_output_token']
+KeyError: 'max_output_token'

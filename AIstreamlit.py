@@ -100,6 +100,7 @@ class GamersCompass:
     def _setup_api_key() -> Optional[str]:
         """Set up and validate API key with enhanced error handling"""
         api_key = os.getenv("GOOGLE_API_KEY")
+        
         if not api_key:
             st.error("""
                 Google API key is not set. Please set the GOOGLE_API_KEY environment variable.
